@@ -1,0 +1,137 @@
+@charset "UTF-8";
+body {
+  font-family: "Manrope", sans-serif;
+  background: #ffffff;
+  color: #000;
+  margin: 0;
+}
+
+.logo {
+  display: block;
+}
+.logo img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+.main {
+  background: url("img/bg.png") no-repeat top center;
+  background-size: 100% auto;
+}
+
+.hero {
+  padding: 100px 0 60px;
+  text-align: left;
+  position: relative;
+}
+.hero h1 {
+  font-weight: 800;
+  font-size: 96px;
+}
+.hero p {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #333;
+}
+.hero .btn-main {
+  margin-top: 30px;
+  background: linear-gradient(117deg, #26adfe 0%, #005be5 100%);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.hero .btn-main:hover {
+  background-color: #006cd9;
+}
+.hero .hero-image {
+  max-width: 100%;
+}
+
+.platform {
+  padding: 80px 0;
+  text-align: center;
+}
+.platform h2 {
+  font-weight: 800;
+  font-size: 32px;
+}
+.platform p {
+  max-width: 800px;
+  margin: 20px auto;
+  font-size: 18px;
+  line-height: 1.6;
+}
+.platform img {
+  max-width: 360px;
+  margin-top: 40px;
+}
+
+/*2я СЕКЦИЯ*/
+.coverage {
+  position: relative;
+  padding: 10px 0;
+  background-color: #fff;
+  text-align: center;
+}
+.coverage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1000px;
+  height: 500px;
+  background: url("img/map-bg.png") no-repeat center top;
+  background-size: contain;
+  transform: translateX(-50%);
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 0;
+}
+.coverage h2 {
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 1;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 108%;
+}
+.coverage h2 .text-primary {
+  background: linear-gradient(90deg, #0043d3 0%, #459be2 51.92%, #b3e9ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.coverage .info-card {
+  background: #fff;
+  border-radius: 16px;
+  position: relative;
+  z-index: 1;
+  transition: 0.3s;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(38, 38, 38, 0.1);
+}
+.coverage .info-card h4 {
+  font-weight: 700;
+  font-size: 20px;
+}
+.coverage .info-card p {
+  font-size: 16px;
+  margin-top: 8px;
+}
+.coverage .info-card .icon {
+  background: linear-gradient(117deg, #26adfe 0%, #005be5 100%);
+  padding: 8px;
+  border-radius: 12px;
+  display: inline-block;
+}
+.coverage .info-card .icon img {
+  width: 48px;
+  height: 48px;
+}
+.coverage .info-card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
