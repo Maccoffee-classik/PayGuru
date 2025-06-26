@@ -323,7 +323,7 @@ body {
   height: 100%;
   z-index: -1;
   transform: translate(-20%, 5%);
-  background: url("../img/bg-white-label-1.svg") center center no-repeat;
+  background: url("/img/bg-white-label-1.svg") center center no-repeat;
   background-size: contain;
 }
 .white-label__bg::after {
@@ -335,7 +335,7 @@ body {
   height: 100%;
   z-index: -1;
   transform: translate(29%, 5%);
-  background: url("../img/bg-white-label-2.svg") center right no-repeat;
+  background: url("/img/bg-white-label-2.svg") center right no-repeat;
   background-size: contain;
 }
 
@@ -536,7 +536,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: url("../img/bg-smart-interface.svg") center center no-repeat;
+  background: url("/img/bg-smart-interface.svg") center center no-repeat;
 }
 .smart-interface h2 {
   margin-bottom: 80px;
@@ -646,7 +646,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: url("../img/bg_footer_1.svg") bottom left no-repeat;
+  background: url("/img/bg_footer_1.svg") bottom left no-repeat;
   background-size: contain;
 }
 .footer::after {
@@ -657,7 +657,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: url("../img/bg_footer_2.svg") bottom right no-repeat;
+  background: url("/img/bg_footer_2.svg") bottom right no-repeat;
   background-size: contain;
 }
 .footer .footer-grid {
