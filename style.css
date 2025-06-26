@@ -646,7 +646,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: url("../img/bg-footer-1.svg") bottom left no-repeat;
+  background: url("../img/bg_footer_1.svg") bottom left no-repeat;
   background-size: contain;
 }
 .footer::after {
@@ -657,7 +657,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: url("../img/bg-footer-2.svg") bottom right no-repeat;
+  background: url("../img/bg_footer_2.svg") bottom right no-repeat;
   background-size: contain;
 }
 .footer .footer-grid {
