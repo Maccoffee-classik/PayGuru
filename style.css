@@ -72,9 +72,16 @@ body {
 /*2я СЕКЦИЯ*/
 .coverage {
   position: relative;
-  padding: 180px 0;
+  padding: 180px 0 30px;
   background-color: #fff;
   text-align: center;
+}
+.coverage__bg-none {
+  padding: 115px 0 114px !important;
+  background: #F7FBFF !important;
+}
+.coverage__bg-none::before {
+  background: transparent !important;
 }
 .coverage::before {
   content: "";
@@ -106,6 +113,7 @@ body {
   color: transparent;
 }
 .coverage .info-card {
+  height: 100%;
   background: #fff;
   border-radius: 16px;
   position: relative;
@@ -119,8 +127,10 @@ body {
   font-size: 20px;
 }
 .coverage .info-card p {
-  font-size: 16px;
+  line-height: 133%;
+  font-size: 18px;
   margin-top: 8px;
+  color: #858585;
 }
 .coverage .info-card .icon {
   width: 56px;
@@ -141,9 +151,12 @@ body {
 
 /*3я СЕКЦИЯ feature*/
 .features {
-  padding: 0px 0;
+  padding: 100px 0;
   background-color: #fff;
   text-align: center;
+}
+.features__bg {
+  background-color: #F7FBFF !important;
 }
 .features h2 {
   font-size: 50px;
@@ -167,19 +180,26 @@ body {
   position: relative;
 }
 .features .feature-card h5 {
-  font-weight: 700;
-  font-size: 18px;
   margin-top: 20px;
   margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 125%;
+  color: #1f1f24;
 }
 .features .feature-card ul {
   padding-left: 1rem;
   margin-bottom: 0;
 }
 .features .feature-card ul li {
-  font-size: 15px;
+  font-size: 16px;
   margin-bottom: 8px;
-  color: #666;
+  color: #858585;
+  font-weight: 500;
+  line-height: 150%;
+}
+.features .feature-card ul li::marker {
+  font-size: 10px;
 }
 .features .feature-card .feature-number {
   width: 56px;
@@ -405,4 +425,134 @@ body {
 }
 .plans .btn-blue:hover {
   background: linear-gradient(90deg, #1578d9 0%, #34aee6 100%);
+}
+
+/*6я СЕКЦИЯ roles*/
+.roles {
+  padding: 0px 0 100px;
+  background-color: #F7FBFF !important;
+  text-align: center;
+}
+.roles h2 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+.roles .role-table-wrapper {
+  padding: 22px;
+  background: transparent;
+  border-radius: 21px;
+  overflow: hidden;
+  border: 2px solid rgba(38, 38, 38, 0.1);
+  max-width: 795px;
+  margin: 0 auto;
+}
+.roles .role-table {
+  width: 100%;
+  margin: 0;
+}
+.roles .role-table thead {
+  background: transparent;
+}
+.roles .role-table thead th {
+  padding: 18px 22px 22px;
+  text-align: left;
+  color: #000;
+  border-bottom: 1px solid rgba(38, 38, 38, 0.1);
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 80%;
+  background: transparent;
+}
+.roles .role-table tbody td {
+  border-style: none;
+  padding: 18px 22px 0;
+  vertical-align: top;
+  color: #444;
+  text-align: left;
+  background: transparent;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 133%;
+  color: rgba(0, 0, 0, 0.55);
+}
+.roles .role-table tbody td:first-child {
+  text-align: left;
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 133%;
+  color: #000;
+}
+.roles .role-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/*7я СЕКЦИЯ smart-interface*/
+.smart-interface {
+  padding: 0px;
+  background-color: #F7FBFF !important;
+  text-align: center;
+  z-index: -2;
+}
+.smart-interface::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: url("../img/bg-smart-interface.svg") center center no-repeat;
+}
+.smart-interface h2 {
+  margin-bottom: 80px;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 108%;
+}
+.smart-interface h2 .gradient-text {
+  background: linear-gradient(90deg, #0043d3 0%, #459be2 51.92%, #b3e9ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.smart-interface .smart-ui-img img {
+  max-width: 100%;
+  border-radius: 30px;
+}
+.smart-interface .smart-card {
+  position: relative;
+  z-index: 1;
+  border-radius: 23px;
+  padding: 10px 21px 21px;
+  height: 100%;
+  transition: 0.3s ease;
+  backdrop-filter: blur(12px);
+  background: linear-gradient(117deg, rgba(38, 173, 254, 0.1) 0%, rgba(0, 91, 229, 0.1) 100%);
+}
+.smart-interface .smart-card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+.smart-interface .smart-card h5 {
+  font-weight: 600;
+  font-size: 35px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  line-height: 1;
+}
+.smart-interface .smart-card h5 .gradient-text {
+  background: linear-gradient(90deg, #0043d3 0%, #459be2 51.92%, #b3e9ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.smart-interface .smart-card p {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 133%;
+  text-align: center;
+  color: #374151;
 }
