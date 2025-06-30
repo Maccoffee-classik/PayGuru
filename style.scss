@@ -143,6 +143,9 @@ body {
     &::before {
       background:transparent!important;
     }
+    @media (max-width: 992px) {
+      padding: 63px 0 0px!important;
+    }
   }
   &::before {
     content: '';
@@ -847,6 +850,9 @@ body {
     height: 100%;
     z-index: -1;
     background: url("img/bg-smart-interface.png") center center no-repeat;
+    @media (max-width: 992px) {
+      background: url("img/bg-smart-interface-mob.png") center center no-repeat;
+    }
   }
 
   h2 {

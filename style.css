@@ -141,6 +141,11 @@ body {
 .coverage__bg-none::before {
   background: transparent !important;
 }
+@media (max-width: 992px) {
+  .coverage__bg-none {
+    padding: 63px 0 0px !important;
+  }
+}
 .coverage::before {
   content: "";
   position: absolute;
@@ -819,6 +824,11 @@ body {
   height: 100%;
   z-index: -1;
   background: url("img/bg-smart-interface.png") center center no-repeat;
+}
+@media (max-width: 992px) {
+  .smart-interface::before {
+    background: url("img/bg-smart-interface-mob.png") center center no-repeat;
+  }
 }
 .smart-interface h2 {
   margin-bottom: 80px;
