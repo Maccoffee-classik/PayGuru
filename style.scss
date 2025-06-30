@@ -34,6 +34,9 @@ body {
   padding: 100px 0 60px;
   text-align: left;
   position: relative;
+  @media (max-width: 992px) {
+    padding-top: 78px;
+  }
 
   h1 {
     font-weight: 800;
@@ -49,9 +52,14 @@ body {
     font-size: 18px;
     margin-top: 10px;
     color: $color-text;
+    @media (max-width: 992px) {
+      padding-top: 16px;
+      margin-top: 0px;
+    }
   }
 
   .btn-main {
+    border:none;
     margin-top: 30px;
     background: $bg-gradient;
     color: #fff;
@@ -59,6 +67,16 @@ body {
     border-radius: 50px;
     font-weight: 600;
     transition: 0.3s;
+    @media (max-width: 992px) {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      font-weight: 700;
+      font-size: 12px;
+      padding: 12px;
+      min-width: 150px;
+    }
 
     &:hover {
       background-color: $color-primary-hover;
@@ -67,6 +85,10 @@ body {
 
   .hero-image {
     max-width: 100%;
+    @media (max-width: 992px) {
+      max-width: 180px;
+      margin: 33px auto 50px;
+    }
   }
 }
 
@@ -74,6 +96,10 @@ body {
 .platform {
   padding: 80px 0;
   text-align: center;
+
+  @media (max-width: 992px) {
+    padding: 70px 0 50px;
+  }
 
   h2 {
     font-weight: 800;
@@ -85,11 +111,18 @@ body {
     margin: 20px auto;
     font-size: 18px;
     line-height: 1.6;
+    @media (max-width: 992px) {
+      font-size: 12px;
+      padding:0 22px;
+    }
   }
 
   img {
     max-width: 360px;
     margin-top: 40px;
+    @media (max-width: 992px) {
+      margin-top: 0px;
+    }
   }
 }
 
@@ -99,6 +132,9 @@ body {
   padding: 180px 0 30px;
   background-color: #fff;
   text-align: center;
+  @media (max-width: 992px) {
+    padding: 180px 0 0px;
+  }
 
   // Фоновая карта
   &__bg-none {
@@ -136,6 +172,7 @@ body {
       font-weight: 800;
       font-size: 24px;
       line-height: 100%;
+      margin-bottom: 50px!important;
     }
 
     .text-primary {
@@ -157,10 +194,17 @@ body {
     transition: 0.3s;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
     border: 1px solid rgba(38, 38, 38, 0.1);
+    @media (max-width: 992px) {
+      border-radius: 6px
+    }
+
 
     h4 {
       font-weight: 700;
       font-size: 20px;
+      @media (max-width: 992px) {
+        font-size: 14px;
+      }
     }
 
     p {
@@ -168,6 +212,10 @@ body {
       font-size: 18px;
       margin-top: 8px;
       color: #858585;
+      @media (max-width: 992px) {
+        font-size: 10px;
+        margin-bottom: 0!important;
+      }
     }
     .icon {
       width: 56px;
@@ -177,10 +225,21 @@ body {
       padding: 8px;
       border-radius: 12px;
       display: inline-block;
+      @media (max-width: 992px) {
+        width: 28px;
+        height: 28px;
+        border-radius: 5px;
+        padding: 0px;
+      }
     }
     .icon img {
       width: 40px;
       height: 40px;
+      @media (max-width: 992px) {
+        width: 21px;
+        height: 21px;
+
+      }
     }
 
     &:hover {
@@ -193,8 +252,14 @@ body {
   padding: 100px 0;
   background-color: #fff;
   text-align: center;
+  @media (max-width: 992px) {
+    padding: 70px 0;
+    background: linear-gradient(to bottom, #ffffff 0%, #eaf6ff 100%);
+  }
   &__bg {
-    background-color: #F7FBFF!important;
+    background: #F7FBFF!important;
+    @media (max-width: 992px) { padding: 40px 0 35px!important; }
+
   }
   h2 {
     font-size: 50px;
@@ -213,6 +278,9 @@ body {
       color: transparent;
     }
   }
+  .feature-card.shadow-0 {
+    box-shadow: none!important;
+  }
 
   .feature-card {
     border: 1px solid rgba(38, 38, 38, 0.1);
@@ -224,6 +292,14 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
     position: relative;
 
+    @media (max-width: 992px) {
+      border-radius: 6px;
+      min-height: 192px;
+
+    }
+
+
+
     h5 {
 
       margin-top: 20px;
@@ -232,6 +308,11 @@ body {
       font-size: 24px;
       line-height: 125%;
       color: #1f1f24;
+      @media (max-width: 992px) {
+
+        font-size: 14px;
+
+      }
     }
 
     ul {
@@ -244,8 +325,14 @@ body {
         color: #858585;
         font-weight: 500;
         line-height: 150%;
+
         &::marker {
           font-size: 10px; // Увеличение размера точки
+        }
+        @media (max-width: 992px) {
+          margin-bottom: 0px;
+          font-size: 10px;
+
         }
       }
     }
@@ -261,6 +348,13 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
+      @media (max-width: 992px) {
+        border-radius: 5px;
+        width: 28px;
+        height: 28px;
+        font-size: 12px;
+      }
+
     }
 
     &:hover {
@@ -276,6 +370,19 @@ body {
     border-radius: 50px;
     font-weight: 600;
     transition: 0.3s;
+    border:none;
+    @media (max-width: 992px) {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      font-weight: 700;
+      font-size: 12px;
+      padding: 12px;
+      min-width: 130px;
+      margin-bottom: 13px;
+
+    }
 
     &:hover {
       background-color: $color-primary-hover;
@@ -287,7 +394,10 @@ body {
   padding: 120px 0;
   background: linear-gradient(180deg, #ffffff 0%, #d7f1ff 100%);
   text-align: center;
-
+  @media (max-width: 992px) {
+    padding: 0 0 51px;
+    background: linear-gradient(to bottom, #eaf6ff 0%, #7cbdf9 100%);
+  }
 
 
   h2 {
@@ -323,6 +433,10 @@ body {
     align-items: flex-start;
     text-align: left;
     transition: 0.3s;
+    @media (max-width: 992px) {
+      min-height: 270px;
+      border-radius: 12px;
+    }
 
     &:hover {
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
@@ -334,6 +448,11 @@ body {
       font-weight: 600;
       font-size: 36px;
       line-height: 111%;
+      @media (max-width: 992px) {
+        font-size: 20px;
+        margin-top: 33px;
+        margin-bottom: 23px;
+      }
     }
 
     p {
@@ -343,6 +462,11 @@ body {
       font-size: 18px;
       line-height: 133%;
       color: #858585;
+      @media (max-width: 992px) {
+        font-size: 14px;
+        margin-bottom: 0px;
+
+      }
     }
 
     .wl-icon  {
@@ -352,6 +476,12 @@ body {
       padding: 8px;
       border-radius: 12px;
       display: inline-block;
+      @media (max-width: 992px) {
+        width: 36px;
+        height: 36px;
+        padding: 4px;
+        border-radius: 10px;
+      }
     }
     .wl-icon-1 {
       background:
@@ -376,6 +506,10 @@ body {
     .wl-icon img {
       width: 40px;
       height: 40px;
+      @media (max-width: 992px) {
+        width: 23px;
+        height: 23px;
+      }
     }
 
     img.img-fluid {
@@ -428,11 +562,19 @@ body {
   background-size: 100% 100%;
   color: #fff;
   text-align: center;
+  @media (max-width: 992px) {
+    padding: 43px 0 61px;
+  }
 
   h2 {
     font-size: 48px;
     font-weight: 800;
     margin-bottom: 73px;
+    @media (max-width: 992px) {
+      font-size: 24px;
+      padding: 0 60px;
+      margin-bottom: 0;
+    }
   }
 
   .plan-card {
@@ -453,6 +595,9 @@ body {
     &:hover {
       box-shadow: 0 0 40px rgba(0, 0, 0, 0.35);
     }
+    @media (max-width: 992px) {
+      padding: 15px 20px 15px;
+    }
 
     h4 {
 
@@ -461,6 +606,11 @@ body {
       font-weight: 600;
       font-size: 36px;
       line-height: 86%;
+      @media (max-width: 992px) {
+        font-size: 24px;
+        margin-top: 29px;
+        margin-bottom: 23px;
+      }
     }
 
     h6 {
@@ -469,6 +619,10 @@ body {
       color: #fff;
       font-weight: 600;
       font-size: 24px;
+      @media (max-width: 992px) {
+        margin-top: 0px;
+        font-size: 16px;
+      }
     }
 
     .plan-label {
@@ -476,6 +630,9 @@ body {
       text-transform: uppercase;
       color: #8899bb;
       font-weight: 600;
+      @media (max-width: 992px) {
+        font-size: 10px;
+      }
     }
 
     .plan-info {
@@ -487,6 +644,9 @@ body {
         font-size: 15px;
         line-height: 1.6;
         color: #c0cae9;
+        @media (max-width: 992px) {
+          font-size: 12px;
+        }
       }
     }
 
@@ -499,6 +659,9 @@ body {
         font-size: 15px;
         color: #d5e0f0;
         margin-bottom: 6px;
+        @media (max-width: 992px) {
+          font-size: 12px;
+        }
       }
     }
 
@@ -551,6 +714,7 @@ body {
   }
 
   .btn-blue {
+    border: none;
 
     color: #fff;
     padding: 12px 28px;
@@ -561,11 +725,15 @@ body {
     transition: background 0.3s;
     margin-top: 30px;
     background: linear-gradient(117deg, #26adfe 0%, #005be5 100%);
+    @media (max-width: 992px) {
+      margin: 30px auto 0;
+    }
 
 
     &:hover {
       background: linear-gradient(90deg, #1578d9 0%, #34aee6 100%);
     }
+
   }
 }
 /*6я СЕКЦИЯ roles*/
@@ -573,11 +741,17 @@ body {
   padding: 0px 0 100px;
   background-color: #F7FBFF!important;
   text-align: center;
+  @media (max-width: 992px) {
+    padding: 0px 0 60px;
+  }
 
   h2 {
     font-size: 32px;
     font-weight: 800;
     margin-bottom: 40px;
+    @media (max-width: 992px) {
+      font-size: 24px;
+    }
   }
 
   .role-table-wrapper {
@@ -609,6 +783,11 @@ body {
         font-size: 30px;
         line-height: 80%;
         background: transparent;
+        @media (max-width: 992px) {
+          font-size: 16px;
+          padding: 20px 0px 15px;
+          width: 50%;
+        }
 
       }
     }
@@ -625,6 +804,11 @@ body {
         font-size: 18px;
         line-height: 133%;
         color: rgba(0, 0, 0, 0.55);
+        @media (max-width: 992px) {
+          font-size: 10px;
+          padding: 17px 0px 0;
+
+        }
 
         &:first-child {
           text-align: left;
@@ -634,6 +818,11 @@ body {
           font-size: 18px;
           line-height: 133%;
           color: #000;
+          @media (max-width: 992px) {
+            font-size: 10px;
+
+          }
+
         }
       }
 
@@ -671,6 +860,7 @@ body {
       font-weight: 800;
       font-size: 24px;
       line-height: 100%;
+      margin-bottom: 24px;
     }
 
     .gradient-text {
@@ -702,6 +892,12 @@ body {
     &:hover {
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     }
+    @media (max-width: 992px) {
+      border-radius: 10px;
+      padding: 10px 10px 10px;
+      backdrop-filter: blur(12px);
+      background: linear-gradient(117deg, rgba(38, 173, 254, 0.1) 0%, rgba(0, 91, 229, 0.1) 100%);
+    }
 
     h5 {
       font-weight: 600;
@@ -717,6 +913,12 @@ body {
         background-clip: text;
         color: transparent;
       }
+      @media (max-width: 992px) {
+        font-weight: 600;
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
     }
 
 
@@ -726,9 +928,16 @@ body {
       line-height: 133%;
       text-align: center;
       color: #374151;
+      @media (max-width: 992px) {
+        font-weight: 500;
+        font-size: 10px;
+
+
+      }
     }
   }
 }
+
 
 
 .tech-section {
@@ -805,10 +1014,13 @@ body {
 }
 
 .footer {
-  z-index: -2;
+  z-index: 0;
   background: #F7FBFF;
   padding: 177px 0 84px;
   font-family: 'Manrope', sans-serif;
+  @media (max-width: 992px) {
+    padding:46px 0 30px;
+  }
 
   &::before {
     content: "";
@@ -846,12 +1058,19 @@ body {
   .footer-left,
   .footer-right {
     flex: 1 1 300px;
+    @media (max-width: 992px) {
+      flex: 1 1 200px;
+    }
   }
 
   .footer-logo {
     height: 45px;
     width: auto;
     margin-bottom: 92px;
+    @media (max-width: 992px) {
+      margin: 0 auto 31px;
+      height: 22px;
+    }
 
   }
 
@@ -865,18 +1084,23 @@ body {
       font-weight: 800;
       font-size: 48px;
       line-height: 142%;
+      margin-bottom: 10px;
     }
   }
   p {
     font-weight: 400;
     font-size: 24px;
     color:#262626;
+    @media (max-width: 992px) {
+      font-size: 16px;
+    }
   }
 
   .btn-blue {
+
     margin-top: 73px;
     display: inline-block;
-
+    border:none;
     color: #fff;
     padding: 12px 28px;
     border-radius: 50px;
@@ -890,6 +1114,10 @@ body {
       background: linear-gradient(90deg, #1578d9 0%, #34aee6 100%);
       text-decoration: none;
     }
+    @media (max-width: 992px) {
+      margin-top: 46px;
+      margin-bottom: 40px;
+    }
   }
 
   .footer-right {
@@ -898,6 +1126,9 @@ body {
       font-size: 64px;
       margin-bottom: 18px;
       margin-top: -20px;
+      @media (max-width: 992px) {
+        font-size: 18px;
+      }
     }
     p {
       margin-bottom: 10px;
@@ -906,6 +1137,9 @@ body {
       font-weight: 400;
       font-size: 24px;
       line-height: 271%;
+      @media (max-width: 992px) {
+        font-size: 14px;
+      }
     }
 
     .footer-links a {
@@ -916,8 +1150,12 @@ body {
       color: rgba(38, 38, 38, 0.75);
       text-decoration: none;
 
+
       &:hover {
         text-decoration: underline;
+      }
+      @media (max-width: 992px) {
+        font-size: 14px;
       }
     }
   }
@@ -927,10 +1165,202 @@ body {
     font-size: 24px;
     line-height: 271%;
     color: rgba(38, 38, 38, 0.75);
+    @media (max-width: 992px) {
+      font-size: 14px!important;
+    }
+
   }
 
 
 }
+
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(20px);
+  background: linear-gradient(117deg, rgba(38, 173, 254, 0.1) 0%, rgba(0, 91, 229, 0.1) 100%);
+  z-index: 999;
+}
+
+.modal-form {
+  border: 1px solid rgba(38, 38, 38, 0.1);
+  max-width: 466px;
+  width: 100%;
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  font-family: 'Manrope', sans-serif;
+  position: relative;
+  @media (max-width: 992px) {
+    max-width: 311px;
+    border-radius: 12px;
+    padding: 16px;
+  }
+
+  .modal-icon {
+    width: 56px;
+    height: 56px;
+    background:
+            linear-gradient(133deg, #ffb196 0%, #ff4424 66.92%),
+            rgba(178, 126, 237, 0.15);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    img {
+      width: 35px;
+      height: 35px;
+      @media (max-width: 992px) {
+        width: 23px;
+        height: 23px;
+      }
+    }
+    @media (max-width: 992px) {
+      width: 36px;
+      height: 36px;
+    }
+  }
+
+  .modal-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 16px;
+    margin-bottom: 4px;
+    @media (max-width: 992px) {
+      font-size: 18px;
+    }
+  }
+
+  .modal-subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    color: #858585;
+    margin-bottom: 24px;
+    @media (max-width: 992px) {
+      font-size: 12px;
+    }
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 16px;
+    border-radius: 12px;
+    border: none;
+    background: #f2f3f5;
+    font-size: 14px;
+    resize: none;
+
+    &:focus {
+      outline: none;
+      background: #eef0f2;
+    }
+  }
+  input::placeholder
+  {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    color: rgba(133, 133, 133, 0.65);
+    @media (max-width: 992px) {
+      font-size: 10px;
+    }
+  }
+  label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    color: rgba(133, 133, 133, 0.65);
+    display: block;
+    margin-bottom: 8px;
+    @media (max-width: 992px) {
+      font-size: 10px;
+    }
+
+  }
+
+  .btn-submit {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    max-width: 200px;
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(117deg, #26adfe 0%, #005be5 100%);
+    border: none;
+    border-radius: 9999px;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    @media (max-width: 992px) {
+      font-size: 12px;
+      padding: 10px;
+      max-width: 150px;
+    }
+
+    &:hover {
+      background: linear-gradient(90deg, #1578d9 0%, #34aee6 100%);
+    }
+  }
+
+  .modal-footer {
+    text-align: center;
+    margin-top: 16px;
+
+    .tg-link {
+
+      margin: auto;
+      text-decoration: none;
+      text-align: center;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 171%;
+      background: linear-gradient(117deg, #26adfe 0%, #005be5 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+      @media (max-width: 992px) {
+        font-size: 12px;
+      }
+
+
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.2s;
+
+  &:hover {
+    color: #000;
+  }
+}
+
+
 
 
 @media (max-width: 1301px) {
