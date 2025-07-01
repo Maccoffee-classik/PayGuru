@@ -909,8 +909,9 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
+    background-size: cover !important;
     background: url("img/bg-smart-interface.png") center center no-repeat;
-    @media (max-width: 992px) {
+    @media (max-width: 576px) {
       background: url("img/bg-smart-interface-mob.png") center center no-repeat;
     }
   }
