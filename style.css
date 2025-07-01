@@ -67,7 +67,7 @@ body {
   margin-top: 30px;
   background: linear-gradient(117deg, #26adfe 0%, #005be5 100%);
   color: #fff;
-  padding: 12px 24px;
+  padding: 14px 26px;
   border-radius: 50px;
   font-weight: 600;
   transition: 0.3s;
@@ -89,6 +89,7 @@ body {
 }
 .hero .hero-image {
   max-width: 100%;
+  margin-top: -77px;
 }
 @media (max-width: 992px) {
   .hero .hero-image {
@@ -98,7 +99,7 @@ body {
 }
 
 .platform {
-  padding: 80px 0;
+  padding: 190px 0 80px;
   text-align: center;
 }
 @media (max-width: 992px) {
@@ -108,12 +109,16 @@ body {
 }
 .platform h2 {
   font-weight: 800;
-  font-size: 32px;
+  font-size: 50px;
+}
+@media (max-width: 992px) {
+  .platform h2 {
+    font-size: 24px;
+  }
 }
 .platform p {
-  max-width: 800px;
-  margin: 20px auto;
-  font-size: 18px;
+  margin: 37px auto 55px;
+  font-size: 24px;
   line-height: 1.25;
 }
 @media (max-width: 992px) {
@@ -123,19 +128,19 @@ body {
   }
 }
 .platform img {
-  max-width: 360px;
   margin-top: 40px;
 }
 @media (max-width: 992px) {
   .platform img {
     margin-top: 0px;
+    max-width: 360px;
   }
 }
 
 /*2я СЕКЦИЯ*/
 .coverage {
   position: relative;
-  padding: 180px 0 30px;
+  padding: 232px 0 30px;
   background-color: #fff;
   text-align: center;
 }
@@ -150,7 +155,7 @@ body {
   }
 }
 .coverage__bg-none {
-  padding: 115px 0 0px !important;
+  padding: 163px 0 0px !important;
   background: #F7FBFF !important;
 }
 .coverage__bg-none::before {
@@ -160,6 +165,9 @@ body {
   .coverage__bg-none {
     padding: 63px 0 0px !important;
   }
+}
+.coverage__bg-none h2 {
+  margin-bottom: 93px !important;
 }
 .coverage::before {
   content: "";
@@ -200,6 +208,7 @@ body {
   color: transparent;
 }
 .coverage .info-card {
+  padding: 28px;
   height: 100%;
   background: #fff;
   border-radius: 16px;
@@ -212,11 +221,12 @@ body {
 @media (max-width: 992px) {
   .coverage .info-card {
     border-radius: 6px;
+    padding: 10px;
   }
 }
 .coverage .info-card h4 {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 40px;
 }
 @media (max-width: 992px) {
   .coverage .info-card h4 {
@@ -268,7 +278,7 @@ body {
 
 /*3я СЕКЦИЯ feature*/
 .features {
-  padding: 100px 0;
+  padding: 161px 0 100px;
   background-color: #fff;
   text-align: center;
 }
@@ -279,6 +289,7 @@ body {
   }
 }
 .features__bg {
+  padding: 70px 0 120px !important;
   background: #F7FBFF !important;
 }
 @media (max-width: 992px) {
@@ -289,6 +300,7 @@ body {
 .features h2 {
   font-size: 50px;
   font-weight: 800;
+  margin-bottom: 5rem;
 }
 @media (max-width: 992px) {
   .features h2 {
@@ -316,11 +328,13 @@ body {
   transition: 0.3s;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
   position: relative;
+  padding: 38px;
 }
 @media (max-width: 992px) {
   .features .feature-card {
     border-radius: 6px;
     min-height: 192px;
+    padding: 10px;
   }
 }
 .features .feature-card h5 {
@@ -383,7 +397,7 @@ body {
   margin-top: 30px;
   background: linear-gradient(117deg, #26adfe 0%, #005be5 100%);
   color: #fff;
-  padding: 12px 24px;
+  padding: 14.5px 28px;
   border-radius: 50px;
   font-weight: 600;
   transition: 0.3s;
@@ -408,7 +422,7 @@ body {
 
 /*4я СЕКЦИЯ white-label*/
 .white-label {
-  padding: 120px 0;
+  padding: 22px 0 100px;
   background: linear-gradient(180deg, #ffffff 0%, #d7f1ff 100%);
   text-align: center;
 }
@@ -421,12 +435,14 @@ body {
 .white-label h2 {
   font-size: 50px;
   font-weight: 800;
+  margin-bottom: 90px;
 }
 @media (max-width: 992px) {
   .white-label h2 {
     font-weight: 800;
     font-size: 24px;
     line-height: 100%;
+    margin-bottom: 54px;
   }
 }
 .white-label h2 .gradient-text {
@@ -461,7 +477,7 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 .white-label .wl-card h5 {
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 10px;
   font-weight: 600;
   font-size: 36px;
@@ -533,7 +549,7 @@ body {
 
 .white-label__bg {
   overflow: hidden;
-  padding: 80px 0 !important;
+  padding: 137px 0 0 !important;
   background: #F7FBFF !important;
   z-index: -2;
 }
@@ -560,6 +576,9 @@ body {
   transform: translate(29%, 5%);
   background: url("img/bg-white-label-2.png") center right no-repeat;
   background-size: contain;
+}
+.white-label__bg .pt-7 {
+  padding-top: 7rem;
 }
 
 /*5я СЕКЦИЯ plans*/
@@ -589,7 +608,7 @@ body {
 }
 .plans .plan-card {
   border-radius: 15px;
-  padding: 32px;
+  padding: 28px 37px;
   text-align: left;
   height: 100%;
   display: flex;
@@ -715,8 +734,9 @@ body {
 }
 .plans .btn-blue {
   border: none;
+  min-width: 300px;
   color: #fff;
-  padding: 12px 28px;
+  padding: 16px 28px;
   border-radius: 50px;
   font-weight: 600;
   display: inline-block;
@@ -736,7 +756,7 @@ body {
 
 /*6я СЕКЦИЯ roles*/
 .roles {
-  padding: 0px 0 100px;
+  padding: 0px 0 135px;
   background-color: #F7FBFF !important;
   text-align: center;
 }
@@ -746,17 +766,18 @@ body {
   }
 }
 .roles h2 {
-  font-size: 32px;
+  font-size: 50px;
   font-weight: 800;
-  margin-bottom: 40px;
+  margin-bottom: 87px;
 }
 @media (max-width: 992px) {
   .roles h2 {
     font-size: 24px;
+    margin-bottom: 37px;
   }
 }
 .roles .role-table-wrapper {
-  padding: 22px;
+  padding: 22px 22px 67px;
   background: transparent;
   border-radius: 21px;
   overflow: hidden;
@@ -1052,7 +1073,7 @@ body {
 .footer .footer-logo {
   height: 45px;
   width: auto;
-  margin-bottom: 92px;
+  margin-bottom: 115px;
 }
 @media (max-width: 992px) {
   .footer .footer-logo {
@@ -1086,11 +1107,11 @@ body {
   }
 }
 .footer .btn-blue {
-  margin-top: 73px;
+  margin-top: 42px;
   display: inline-block;
   border: none;
   color: #fff;
-  padding: 12px 28px;
+  padding: 16px 42px;
   border-radius: 50px;
   font-weight: 600;
   transition: background 0.3s;
@@ -1108,7 +1129,7 @@ body {
 }
 .footer .footer-right h5 {
   font-weight: 700;
-  font-size: 64px;
+  font-size: 40px;
   margin-bottom: 18px;
   margin-top: -20px;
 }
@@ -1153,6 +1174,14 @@ body {
 @media (max-width: 992px) {
   .footer .text-muted {
     font-size: 14px !important;
+  }
+}
+.footer .mt-9 {
+  margin-top: 9rem;
+}
+@media (max-width: 768px) {
+  .footer .mt-9 {
+    margin-top: 1rem;
   }
 }
 
