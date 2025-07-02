@@ -106,7 +106,7 @@ body {
 
 // Platform Section
 .platform {
-  padding: 151px 208px 80px 0;
+  padding: 151px 0 80px;
   text-align: center;
 
   @media (max-width: 992px) {
@@ -713,10 +713,10 @@ body {
     .plan-info {
       list-style: none;
       padding-left: 0;
-      margin: 13px 0 25px;
+      margin: 20px 0 7px;
 
       li {
-        font-size: 15px;
+        font-size: 14px;
         line-height: 1.6;
         color: #c0cae9;
         @media (max-width: 992px) {
@@ -728,10 +728,10 @@ body {
     ul {
       list-style: disc;
       padding-left: 20px;
-      margin-bottom: -11px;
+      margin-bottom: 18px;
 
       li {
-        font-size: 15px;
+        font-size: 14px;
         color: #d5e0f0;
         margin-bottom: 6px;
         @media (max-width: 992px) {
