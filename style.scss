@@ -25,7 +25,7 @@ body {
 
 
 .main {
-  padding-top: 60px;
+  padding-top: 66px;
   background: url("img/bg.png") no-repeat top center;
   background-size: 100% auto;
   @media (max-width: 375px) {
@@ -37,7 +37,7 @@ body {
 }
 // Hero Section
 .hero {
-  padding: 100px 0 60px;
+  padding: 133px 0 60px;
   text-align: left;
   position: relative;
   @media (max-width: 992px) {
@@ -45,8 +45,10 @@ body {
   }
 
   h1 {
+    margin-top: 40px;
     font-weight: 800;
     font-size: 96px;
+
     @media (max-width: 992px) {
       font-weight: 800;
       font-size: 48px;
@@ -55,10 +57,11 @@ body {
   }
 
   p {
-    font-size: 18px;
-    margin-top: 24px;
+    font-size: 24px;
+    margin-top: 20px;
     color: $color-text;
-    margin-bottom: 52px;
+    margin-bottom: 63px;
+    line-height: 125%;
     @media (max-width: 992px) {
       padding-top: 16px;
       margin-top: 0px;
@@ -71,7 +74,7 @@ body {
     margin-top: 30px;
     background: $bg-gradient;
     color: #fff;
-    padding: 14px 26px;
+    padding: 15px 29px;
     border-radius: 50px;
     font-weight: 600;
     transition: 0.3s;
@@ -103,7 +106,7 @@ body {
 
 // Platform Section
 .platform {
-  padding: 190px 0 80px;
+  padding: 151px 208px 80px 0;
   text-align: center;
 
   @media (max-width: 992px) {
@@ -120,7 +123,7 @@ body {
 
   p {
 
-    margin: 37px auto 55px;
+    margin: 40px auto 55px;
     font-size: 24px;
     line-height: 1.25;
     @media (max-width: 992px) {
@@ -170,14 +173,14 @@ body {
   &::before {
     content: '';
     position: absolute;
-    top: 0;
+    top: 25px;
     left: 50%;
     max-width: 1000px;
     width: 100%;
     height: 100%;
     background: url("img/map-bg.png") no-repeat center top;
     background-size: contain;
-    transform: translateX(-50%);
+    transform: translateX(-61%);
     opacity: 0.15;
     pointer-events: none;
     z-index: 0;
@@ -185,7 +188,7 @@ body {
 
   h2 {
 
-    margin-bottom: 50px;
+    margin-bottom: 65px;
     position: relative;
     z-index: 1;
     font-weight: 800;
@@ -244,6 +247,7 @@ body {
       }
     }
     .icon {
+      margin-bottom: 28px !important;
       width: 56px;
       height: 56px;
       text-align: center;
@@ -275,7 +279,7 @@ body {
 }
 /*3я СЕКЦИЯ feature*/
 .features {
-  padding: 161px 0 100px;
+  padding: 108px 0 100px;
   background-color: #fff;
   text-align: center;
   @media (max-width: 992px) {
@@ -283,14 +287,17 @@ body {
     background: linear-gradient(to bottom, #ffffff 0%, #eaf6ff 100%);
   }
   &__bg {
-    padding: 70px 0 120px!important;
+    padding: 110px 0 120px!important;
     background: #F7FBFF!important;
 
 
     @media (max-width: 992px) { padding: 40px 0 35px!important; }
 
   }
+  .mb54rem{margin-bottom: 5.4rem !important;}
+
   h2 {
+    line-height: 1.08;
     font-size: 50px;
     font-weight: 800;
     margin-bottom: 5rem;
@@ -356,7 +363,7 @@ body {
 
       li {
         font-size: 16px;
-        margin-bottom: 8px;
+        margin-bottom: 0px;
         color: #858585;
         font-weight: 500;
         line-height: 150%;
@@ -398,10 +405,10 @@ body {
   }
 
   .btn-main {
-    margin-top: 30px;
+    margin-top: 13px;
     background: $bg-gradient;
     color: #fff;
-    padding: 14.5px 28px;
+    padding: 15.5px 37px;
     border-radius: 50px;
     font-weight: 600;
     transition: 0.3s;
@@ -480,8 +487,8 @@ body {
     }
 
     h5 {
-      margin-top: 40px;
-      margin-bottom: 10px;
+      margin-top: 42px;
+      margin-bottom: 15px;
       font-weight: 600;
       font-size: 36px;
       line-height: 111%;
@@ -572,9 +579,12 @@ body {
     }
   }
 }
+.mb-21px {
+  margin-bottom: -21px!important;
+}
 .white-label__bg {
   overflow: hidden;
-  padding: 137px 0 0!important;
+  padding: 151px 0 0!important;
 
   background: #F7FBFF!important;
   z-index: -2;
@@ -607,8 +617,9 @@ body {
     background: url("img/bg-white-label-2.png") center right no-repeat;
     background-size: contain;
   }
-  .pt-7 {
-    padding-top: 7rem;
+  .pt-6 {
+    padding-top: 6rem;
+    margin-bottom: 77px !important;
     @media (max-width: 992px) {
       padding-top: 33px;
     }
@@ -619,7 +630,7 @@ body {
 
 /*5я СЕКЦИЯ plans*/
 .plans {
-  padding: 100px 0;
+  padding: 109px 0;
   background: url("img/bg-plans.png") no-repeat top center;
   background-size: 100% 100%;
   color: #fff;
@@ -627,11 +638,13 @@ body {
   @media (max-width: 992px) {
     padding: 43px 0 61px;
   }
-
+  .mb-2r {
+    margin-bottom: 2rem;
+  }
   h2 {
     font-size: 48px;
     font-weight: 800;
-    margin-bottom: 73px;
+    margin-bottom: 82px;
     @media (max-width: 992px) {
       font-size: 24px;
 
@@ -664,7 +677,7 @@ body {
     h4 {
 
       color: #ffffff;
-      margin-top: 8px;
+      margin-top: 30px;
       font-weight: 600;
       font-size: 36px;
       line-height: 86%;
@@ -676,7 +689,7 @@ body {
     }
 
     h6 {
-      margin-top: 24px;
+      margin-top: 7px;
 
       color: #fff;
       font-weight: 600;
@@ -700,7 +713,7 @@ body {
     .plan-info {
       list-style: none;
       padding-left: 0;
-      margin: 20px 0;
+      margin: 13px 0 25px;
 
       li {
         font-size: 15px;
@@ -715,7 +728,7 @@ body {
     ul {
       list-style: disc;
       padding-left: 20px;
-      margin-bottom: 20px;
+      margin-bottom: -11px;
 
       li {
         font-size: 15px;
@@ -742,7 +755,7 @@ body {
   .addon-card {
 
     border-radius: 15px;
-    padding: 32px;
+    padding: 21px;
     color: #d9e2f3;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
     text-align: left;
@@ -754,13 +767,13 @@ body {
       text-transform: uppercase;
       color: #8899bb;
       font-weight: 600;
-      margin-bottom: 4px;
+      margin-bottom: 31px;
     }
 
     h5 {
       font-weight: 700;
-      font-size: 18px;
-      margin-bottom: 8px;
+      font-size: 36px;
+      margin-bottom: 17px;
       color: #fff;
     }
 
@@ -772,6 +785,7 @@ body {
     .plan-foot {
       font-size: 13px;
       color: #8899bb;
+      margin-top: -8px !important
     }
   }
 
@@ -1134,7 +1148,7 @@ body {
         font-weight: 600;
         font-size: 35px;
         margin-top: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 28px;
         @media (max-width: 992px) {
           font-weight: 600;
           font-size: 18px;
@@ -1182,7 +1196,7 @@ body {
 .footer {
   z-index: 0;
   background: #F7FBFF;
-  padding: 177px 0 84px;
+  padding: 182px 0 84px;
   font-family: 'Manrope', sans-serif;
   @media (max-width: 768px) {
     padding:46px 0 30px;
@@ -1241,7 +1255,7 @@ body {
   .footer-logo {
     height: 45px;
     width: auto;
-    margin-bottom: 115px;
+    margin-bottom: 125px;
     @media (max-width: 992px) {
       margin: 0 auto 31px;
       height: 22px;
@@ -1254,7 +1268,7 @@ body {
     font-size: 96px;
     line-height: 71%;
     color: #262626;
-    margin-bottom: 50px;
+    margin-bottom: 41px;
     @media (max-width: 992px) {
       font-weight: 800;
       font-size: 48px;
@@ -1299,14 +1313,14 @@ body {
     h5 {
       font-weight: 700;
       font-size: 40px;
-      margin-bottom: 18px;
-      margin-top: -20px;
+      margin-bottom: 15px;
+      margin-top: -8px;
       @media (max-width: 992px) {
         font-size: 18px;
       }
     }
     p {
-      margin-bottom: 10px;
+      margin-bottom: 4px;
       color: #333;
 
       font-weight: 400;
@@ -1347,7 +1361,7 @@ body {
   }
 
   .mt-9 {
-    margin-top: 9rem;
+    margin-top: 8.5rem;
     @media (max-width: 768px) {
       margin-top: 1rem;
     }
