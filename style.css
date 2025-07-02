@@ -773,6 +773,11 @@ body {
   color: #8899bb;
   margin-top: -8px !important;
 }
+@media (max-width: 992px) {
+  .plans .addon-card .plan-foot {
+    margin-top: 16px !important;
+  }
+}
 .plans .btn-blue {
   border: none;
   color: #fff;
