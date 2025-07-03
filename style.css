@@ -642,6 +642,11 @@ body {
 .plans .mb-2r {
   margin-bottom: 2rem;
 }
+@media (max-width: 992px) {
+  .plans .mb-2r {
+    margin-bottom: 1rem;
+  }
+}
 .plans h2 {
   font-size: 48px;
   font-weight: 800;
